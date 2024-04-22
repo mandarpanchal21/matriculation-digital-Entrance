@@ -1,0 +1,195 @@
+Skip to content
+mandarpanchal21
+/
+matriculation-digital-Entrance
+
+Type / to search
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Creating a new file in matriculation-digital-Entrance
+Breadcrumbsmatriculation-digital-Entrance
+/
+Name your file...
+in
+main
+
+Edit
+
+Preview
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+import datetime
+import tkinter as tk
+from tkinter import*
+root = Tk()
+root.geometry("700x600")
+
+def submit_value():
+    print("Your information has been saved successfully and proceed further")
+
+
+Label(root, text="Matriculation management System", font="times 30 bold").grid(row=0,column=3)
+
+name_user = Label(root, text="Visitor Name",font="times 25 bold")
+name_user.grid(row=1,column=2)
+
+visitor_user = Label(root, text="Visitor Visit(flat no/wing)",font="times 25 bold")
+visitor_user.grid(row=2,column=2)
+
+purpose_user= Label(root, text="Purpose To Visit",font="times 25 bold")
+purpose_user.grid(row=3,column=2)
+
+contact_user= Label(root, text="Visitor Contact Number",font="times 25 bold")
+contact_user.grid(row=4,column=2)
+
+datetime_user= Label(root, text="Date/Time",font="times 25 bold")
+datetime_user.grid(row=5,column=2)
+
+x = datetime.datetime.now()
+
+print(x)
+
+
+
+name_value=StringVar
+visitor_value=StringVar
+purpose_value=StringVar
+contact_value = StringVar
+datetime_value=IntVar
+
+name_box =Entry(root, textvariable=name_value)
+name_box.grid(row=1,column=3)
+
+visitor_box=Entry(root,textvariable=visitor_value)
+visitor_box.grid(row=2,column=3)
+
+purpose_box=Entry(root, textvariable=purpose_value)
+purpose_box.grid(row=3,column=3)
+
+contact_box=Entry(root, textvariable=contact_value)
+contact_box.grid(row=4,column=3)
+
+datetime_box=Entry(root, textvariable=datetime_value)
+datetime_box.grid(row=5,column=3)
+
+
+
+Button(text="Submit",command=submit_value).grid(row=8,column=3)
+
+def submit_form():
+    # Perform validation and processing here
+    print("Form submitted")
+
+# Create a Tkinter window
+root = tk.Tk()
+root.title("Python GUI")
+
+# Create a function to handle form submission
+def on_submit():
+    submit_form()
+
+# Create a form with a submit button
+frame = tk.Frame(root)
+frame.pack(padx=20, pady=20)
+
+label = tk.Label(frame, text="Please fill out the form:")
+label.pack()
+
+# Add form fields here (e.g., Entry widgets)
+
+submit_button = tk.Button(frame, text="Submit", command=on_submit)
+submit_button.pack()
+
+
+root.mainloop()
+New File at / · mandarpanchal21/matriculation-digital-Entrance 
